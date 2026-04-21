@@ -5,7 +5,6 @@ ARG TARGETARCH
 
 RUN GOOS=$TARGETOS GOARCH=$TARGETARCH xcaddy build \
     --with github.com/caddy-dns/rfc2136            \
-    --with github.com/mholt/caddy-l4               \
     --with github.com/zhangjiayin/caddy-mysql-storage
 
 FROM caddy:latest
